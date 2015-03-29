@@ -1,0 +1,81 @@
+{
+  "name": "bitauth",
+  "description": "Passwordless authentication using Bitcoin cryptography",
+  "author": {
+    "name": "Patrick Nagurny",
+    "email": "patrick@bitpay.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bitpay/bitauth.git"
+  },
+  "contributors": [
+    {
+      "name": "Eric Martindale",
+      "email": "eric@ericmartindale.com"
+    },
+    {
+      "name": "Gordon Hall",
+      "email": "gordon@bitpay.com"
+    },
+    {
+      "name": "Braydon Fuller",
+      "email": "braydon@bitpay.com"
+    }
+  ],
+  "scripts": {
+    "make-dist": "sh scripts/make-dist.sh",
+    "postinstall": "npm run make-dist",
+    "test": "mocha test/*.js --reporter spec"
+  },
+  "main": "index.js",
+  "version": "0.2.1",
+  "dependencies": {
+    "elliptic": "=1.0.0",
+    "hash.js": "^0.3.2",
+    "bs58": "^2.0.0",
+    "request": "^2.36.0",
+    "express": "^4.3.1",
+    "body-parser": "^1.2.0"
+  },
+  "devDependencies": {
+    "uglify-js": "~2.4.14",
+    "browserify": "=6.1.0",
+    "chai": "=1.9.1",
+    "mocha": "~1.20.1"
+  },
+  "gitHead": "4e76ffa5d4eb7940536bd910a76a0f8647115238",
+  "bugs": {
+    "url": "https://github.com/bitpay/bitauth/issues"
+  },
+  "homepage": "https://github.com/bitpay/bitauth",
+  "_id": "bitauth@0.2.1",
+  "_shasum": "0fe6a2be888826ae143a9d4a747fa8834c10c049",
+  "_from": "bitauth@",
+  "_npmVersion": "2.1.17",
+  "_nodeVersion": "0.10.35",
+  "_npmUser": {
+    "name": "martindale",
+    "email": "eric@ericmartindale.com"
+  },
+  "maintainers": [
+    {
+      "name": "jasondreyzehner",
+      "email": "jason@dreyzehner.com"
+    },
+    {
+      "name": "patrickbitpay",
+      "email": "patrick@bitpay.com"
+    },
+    {
+      "name": "martindale",
+      "email": "eric@ericmartindale.com"
+    }
+  ],
+  "dist": {
+    "shasum": "0fe6a2be888826ae143a9d4a747fa8834c10c049",
+    "tarball": "http://registry.npmjs.org/bitauth/-/bitauth-0.2.1.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/bitauth/-/bitauth-0.2.1.tgz"
+}
